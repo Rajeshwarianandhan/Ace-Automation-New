@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Web Tools | GUVI</title>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=DM Sans" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+            crossorigin="anonymous" />
+        <link rel="stylesheet" href="./css/style1.css" />
+        <link rel="apple-touch-icon"
+            href="/docs/5.2/assets/img/favicons/apple-touch-icon.png"
+            sizes="180x180" />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
+        <script src="./js/acorn_interpreter.js"></script>
+        <!-- <script src="./js/babel.min.js"></script> -->
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <nav
+                class="navbar navbar-expand-lg navbar-light bg-light align-items-center sticky-top z-1 d-flex justify-content-between">
+                <a class="navbar-brand" href="/"><img class="lazyloaded"
+                    alt="GUVI : Learn to code in your native language" src="./img/new-guvi-logo.png" width="120px" />
+                </a>
+                <!-- <a class="navbar-brand" href="/"><img class="lazyloaded"
+                    alt="GUVI : Learn to code in your native language" src="./img/guvi-logo.png" />
+                </a> -->
+                <a href="/webtool.html" class="btn btn-success back-btn">Back</a>
+                <!-- <button
+                    class="btn btn-link bd-search-docs-toggle d-sm-none p-0 ml-3 collapsed"
+                    type="button" data-toggle="collapse"
+                    data-target="#bd-docs-nav" aria-controls="bd-docs-nav"
+                    aria-expanded="false" aria-label="Toggle docs navigation"><svg
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"
+                        width="30" height="30" focusable="false"><title>Menu</title>
+                        <path
+                            stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-miterlimit="10"
+                            d="M4 7h22M4 15h22M4 23h22"></path></svg>
+                </button> -->
+                <!-- <span ></span> -->
+            </nav>
+            <main class="row g-0">
+                <!-- <sidebar id="bd-docs-nav"
+                    class="d-none d-sm-inline-flex col-sm-1 text-center g-0 ">
+                    <ul style="list-style-type:none;padding: 0;">
+                        <li>
+                            <div class="p-2">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="100%"
+                                    height="10vh" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M1.5 0L3.4125 21.6L12 24L20.5845 21.6015L22.5 0H1.5ZM18.411 7.0635L18.1695 9.777L17.442 17.913L12 19.416L11.997 19.4175L6.5595 17.9115L6.1785 13.6575H8.8425L9.0405 15.8655L11.997 16.6635L12 16.6605L14.9595 15.8625L15.363 12.186L6.051 12.2115L5.787 9.696L15.5865 9.582L15.7845 6.8895L5.5245 6.918L5.352 4.416H18.648L18.411 7.0635Z"
+                                        fill="#B1B6D1" />
+                                </svg>
+                            </div>
+                        </li>
+                    </ul>
+                </sidebar> -->
+                <div class="col-12 col-sm-12 col-md-12">
+                    <div
+                        class="row row-gap-5 row-gap-md-0 row-gap-sm-5 accordion g-0">
+                        <div
+                            class="question-panel col-12 col-sm-12 col-md-5 position-relative">
+                            <div class="top-bar d-flex justify-content-between">
+                                <h4>JS Warm Up</h4>
+                            </div>
+                            <div
+                                class="d-flex flex-column justify-content-between qs-layout">
+                                <div id="question" class="m-2 p-2"></div>
+                                <div id="question-nav"
+                                    class="d-flex justify-content-between z-0">
+                                    <div class="p-2 bd-highlight">
+                                        <button class="btn nav-btn"
+                                            onclick="prevPage()">
+                                            <span aria-hidden="true">&laquo;</span>
+                                            Prev
+                                        </button>
+                                    </div>
+                                    <div class="p-2 bd-highlight">
+                                        <span id="questionNo">1</span> /
+                                        <span id="totalQuestions">30</span>
+                                    </div>
+                                    <div class="p-2 bd-highlight">
+                                        <button class="btn nav-btn"
+                                            onclick="nextPage()">
+                                            Next <span aria-hidden="true">&raquo;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrapper col-12 col-sm-12 col-md-7">
+                            <div class="code-editor overflow-y-scroll">
+                                <div
+                                    class="top-bar d-flex justify-content-between">
+                                    <h4 class="p-2">JS Code Editor</h4>
+                                    <div class="p-2">
+                                        <div class="d-lg-block d-none">
+                                            <button type="button"
+                                                class="btn btn-success"
+                                                id="runCode" onclick="runCode()">
+                                                Run Code
+                                            </button>
+                                            <button type="button"
+                                                class="btn btn-primary"
+                                                id="submitCode"
+                                                onclick="submitCode()">
+                                                Submit Code
+                                            </button>
+                                        </div>
+                                        <div class="d-lg-none d-block">
+                                            <button type="button"
+                                                class="btn btn-success"
+                                                id="runCode" onclick="runCode()">
+                                                <i class="bi bi-play-fill"></i>
+                                            </button>
+                                            <button type="button"
+                                                class="btn btn-primary"
+                                                id="submitCode"
+                                                onclick="submitCode()">
+                                                Submit
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="editor"></div>
+                                <div class="p-2" id="compileMsg"></div>
+                                <nav id="editor-nav">
+                                    <div
+                                        class="nav nav-tabs text-success"
+                                        id="nav-tab" role="tablist">
+                                        <button
+                                            class="nav-link active text-success"
+                                            id="nav-output-tab"
+                                            data-bs-toggle="tab"
+                                            data-bs-target="#output"
+                                            type="button" role="tab"
+                                            aria-controls="output"
+                                            aria-selected="true">
+                                            Output
+                                        </button>
+                                        <button class="nav-link text-success"
+                                            id="nav-testcases-tab"
+                                            data-bs-toggle="tab"
+                                            data-bs-target="#testcases-tab"
+                                            type="button" role="tab"
+                                            aria-controls="testcases-tab"
+                                            aria-selected="false">
+                                            Test Case
+                                        </button>
+
+                                        <div class="d-lg-block d-none">
+                                            <button
+                                                class="nav-link text-success"
+                                                id="nav-editor-config-tab"
+                                                data-bs-toggle="tab"
+                                                data-bs-target="#editor-config-tab"
+                                                type="button" role="tab"
+                                                aria-controls="editor-config-tab"
+                                                aria-selected="false">
+                                                Editor Configure <i
+                                                    class="bi bi-gear-fill"></i>
+                                            </button>
+                                        </div>
+                                        <div class="d-lg-none d-block">
+                                            <button
+                                                class="nav-link text-success"
+                                                id="nav-editor-config-tab"
+                                                data-bs-toggle="tab"
+                                                data-bs-target="#editor-config-tab"
+                                                type="button" role="tab"
+                                                aria-controls="editor-config-tab"
+                                                aria-selected="false">
+                                                <i class="bi bi-gear-fill"></i>
+                                            </button>
+                                        </div>
+                                        <div class="d-lg-none d-block">
+                                            <button
+                                                class="nav-link text-success"
+                                                id="nav-code-download-tab"
+                                                data-bs-toggle="tab"
+                                                data-bs-target="#code-download-tab"
+                                                type="button"
+                                                role="tab"
+                                                aria-controls="code-download-tab"
+                                                onclick="initiateDownload()"
+                                                aria-selected="false">
+                                                <i class="bi bi-download"></i>
+                                            </button>
+                                        </div>
+                                        <div class="d-lg-block d-none">
+                                            <button
+                                                class="nav-link text-success"
+                                                id="nav-code-download-tab"
+                                                data-bs-toggle="tab"
+                                                data-bs-target="#code-download-tab"
+                                                type="button"
+                                                role="tab"
+                                                onclick="initiateDownload()"
+                                                aria-controls="code-download-tab"
+                                                aria-selected="false">
+                                                Download Code <i
+                                                    class="bi bi-download"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </nav>
+                                <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane fade show active"
+                                        id="output" role="tabpanel"
+                                        aria-labelledby="nav-output-tab">
+                                        <div class="d-flex flex-column">
+                                            <fieldset class="p-2"
+                                                id="console-log-div"></fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade"
+                                        id="testcases-tab" role="tabpanel"
+                                        aria-labelledby="nav-testcases-tab">
+                                        <div id="testcases"
+                                            class="d-flex flex-column"></div>
+                                    </div>
+                                    <div class="tab-pane fade"
+                                        id="code-download-tab" role="tabpanel"
+                                        aria-labelledby="nav-code-download-tab">
+                                        <div
+                                            class="d-flex flex-row justify-content-around">
+                                            <mark class="text-justify">Note :
+                                                You can change the
+                                                download
+                                                file format in Editor Configure
+                                                Tab</mark>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade"
+                                        id="editor-config-tab" role="tabpanel"
+                                        aria-labelledby="nav-editor-config-tab">
+                                        <div
+                                            class="d-flex flex-column justify-content-start editor-config">
+                                            <div class="row g-2">
+                                                <div class="form-group">
+                                                    <label for="theme-select">Editor
+                                                        Theme</label>
+                                                    <select class="form-select"
+                                                        id="theme-select">
+                                                        <optgroup label="Bright">
+                                                            <option
+                                                                value="ace/theme/chrome">Chrome</option>
+                                                            <option
+                                                                value="ace/theme/clouds">Clouds</option>
+                                                            <option
+                                                                value="ace/theme/crimson_editor">
+                                                                Crimson Editor
+                                                            </option>
+                                                            <option
+                                                                value="ace/theme/dawn">Dawn</option>
+                                                            <option
+                                                                value="ace/theme/dreamweaver">
+                                                                Dreamweaver
+                                                            </option>
+                                                            <option
+                                                                value="ace/theme/eclipse">Eclipse</option>
+                                                            <option
+                                                                value="ace/theme/github">GitHub</option>
+                                                            <option
+                                                                value="ace/theme/iplastic">
+                                                                IPlastic
+                                                            </option>
+                                                            <option
+                                                                value="ace/theme/solarized_light">
+                                                                Solarized Light
+                                                            </option>
+                                                            <option
+                                                                value="ace/theme/textmate">
+                                                                TextMate
+                                                            </option>
+                                                            <option
+                                                                value="ace/theme/tomorrow">
+                                                                Tomorrow
+                                                            </option>
+                                                            <option
+                                                                value="ace/theme/xcode">XCode</option>
+                                                            <option
+                                                                value="ace/theme/kuroir">Kuroir</option>
+                                                            <option
+                                                                value="ace/theme/katzenmilch">
+                                                                KatzenMilch
+                                                            </option>
+                                                            <option
+                                                                value="ace/theme/sqlserver">
+                                                                SQL Server
+                                                            </option>
+                                                        </optgroup>
+                                                        <optgroup label="Dark">
+                                                            <option
+                                                                value="ace/theme/ambiance">
+                                                                Ambiance
+                                                            </option>
+                                                            <option
+                                                                value="ace/theme/chaos">Chaos</option>
+                                                            <option
+                                                                value="ace/theme/clouds_midnight">
+                                                                Clouds Midnight
+                                                            </option>
+                                                            <option
+                                                                value="ace/theme/dracula">Dracula</option>
+                                                            <option
+                                                                value="ace/theme/cobalt">Cobalt</option>
+                                                            <option
+                                                                value="ace/theme/gruvbox">Gruvbox</option>
+                                                            <option
+                                                                value="ace/theme/gob">
+                                                                Green on Black
+                                                            </option>
+                                                            <option
+                                                                value="ace/theme/idle_fingers">
+                                                                idle Fingers
+                                                            </option>
+                                                            <option
+                                                                value="ace/theme/kr_theme">
+                                                                krTheme
+                                                            </option>
+                                                            <option
+                                                                value="ace/theme/merbivore">
+                                                                Merbivore
+                                                            </option>
+                                                            <option
+                                                                value="ace/theme/merbivore_soft">
+                                                                Merbivore Soft
+                                                            </option>
+                                                            <option
+                                                                value="ace/theme/mono_industrial">
+                                                                Mono Industrial
+                                                            </option>
+                                                            <option
+                                                                value="ace/theme/monokai">Monokai</option>
+                                                            <option
+                                                                value="ace/theme/nord_dark">
+                                                                Nord Dark
+                                                            </option>
+                                                            <option
+                                                                value="ace/theme/one_dark">
+                                                                One Dark
+                                                            </option>
+                                                            <option
+                                                                value="ace/theme/pastel_on_dark">
+                                                                Pastel on dark
+                                                            </option>
+                                                            <option
+                                                                value="ace/theme/solarized_dark">
+                                                                Solarized Dark
+                                                            </option>
+                                                            <option
+                                                                value="ace/theme/terminal">
+                                                                Terminal
+                                                            </option>
+                                                            <option
+                                                                value="ace/theme/tomorrow_night">
+                                                                Tomorrow Night
+                                                            </option>
+                                                            <option
+                                                                value="ace/theme/tomorrow_night_blue">
+                                                                Tomorrow Night
+                                                                Blue
+                                                            </option>
+                                                            <option
+                                                                value="ace/theme/tomorrow_night_bright">
+                                                                Tomorrow Night
+                                                                Bright
+                                                            </option>
+                                                            <option
+                                                                value="ace/theme/tomorrow_night_eighties">
+                                                                Tomorrow Night
+                                                                80s
+                                                            </option>
+                                                            <option
+                                                                value="ace/theme/twilight">
+                                                                Twilight
+                                                            </option>
+                                                            <option
+                                                                value="ace/theme/vibrant_ink">
+                                                                Vibrant Ink
+                                                            </option>
+                                                            <option
+                                                                value="ace/theme/github_dark">
+                                                                GitHub Dark
+                                                            </option>
+                                                        </optgroup>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="editorFontSize"
+                                                        class="form-label">Font
+                                                        Size
+                                                        <span id="fontSize"
+                                                            class="badge bg-secondary">New</span></label>
+                                                    <input type="range"
+                                                        class="form-range"
+                                                        min="12" max="30"
+                                                        step="1"
+                                                        id="editorFontSize" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="loopLimitRange"
+                                                        class="form-label">Max
+                                                        Loop Iteration Limit
+                                                        <span id="loopLimit"
+                                                            class="badge bg-secondary">5000</span>
+                                                    </label>
+                                                    <input type="range"
+                                                        class="form-range"
+                                                        min="5000" max="50000"
+                                                        step="100"
+                                                        id="loopLimitRange" />
+                                                    <div class="form-group">
+                                                        <label
+                                                            for="file-type-select">
+                                                            Download File Type</label>
+                                                        <select
+                                                            class="form-select"
+                                                            id="file-type-select">
+                                                            <option value="js">.js</option>
+                                                            <option value="txt">.txt</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--
+                                <div class="tab-pane fade" id="testcase"
+                                    role="tabpanel"
+                                    aria-labelledby="nav-testcase-tab">...</div>
+                                <div class="tab-pane fade" id="nav-contact"
+                                    role="tabpanel"
+                                    aria-labelledby="nav-contact-tab">...</div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.9/beautify.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/ace-builds@1.23.4/src-min-noconflict/ace.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/ace-builds@1.23.4/src-min-noconflict/ext-emmet.js"></script>
+        <script src="https://cloud9ide.github.io/emmet-core/emmet.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/ace-builds@1.23.4/src-min-noconflict/ext-language_tools.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/ace-builds@1.23.4/src-min-noconflict/ext-inline_autocomplete.js"></script>
+        <script src="./js/babel_plugin.min.js"></script>
+        <script src="./js/log.min.js"></script>
+        <script src="./js/main.min.js"></script>
+        <!-- <script src="./js/main.js"></script> -->
+        <!-- <script>
+        document
+          .querySelector("#sidebarCollapse")
+          ?.addEventListener("click", function () {
+            if (document.querySelectorAll(".active").length == 0) {
+              document.querySelector("#sidebar").classList.add("active");
+              document.querySelector("#sidebarCollapse").classList.add("active");
+            } else {
+              document
+                .querySelectorAll(".active")
+                .forEach((ele) => ele.classList.remove("active"));
+            }
+          });
+    </script> -->
+    </body>
+
+</html>

@@ -1,0 +1,211 @@
+.container-fluid>nav {
+    border-bottom: 1px solid rgb(166, 170, 197);
+    color: rgb(100, 122, 166);
+    text-align: center;
+    height: 10vh;
+    top: 0;
+    z-index: 100 !important;
+}
+
+.back-btn {
+    margin-right: 0.8rem;
+}
+
+main {
+    font-family: "DM Sans";
+    height: 90vh;
+    box-sizing: border-box;
+    z-index: 0;
+
+    .collapse {
+        display: none;
+    }
+
+    .top-bar {
+        padding: 0;
+        background-color: #E0FFE7;
+        height: 7.5vh;
+        align-items: center;
+        color: rgb(13, 186, 75);
+        font-weight: bold;
+        border-bottom: 1px solid rgb(13, 186, 75);
+
+        >* {
+            margin: 5px !important;
+        }
+    }
+
+    .question-panel {
+        height: 82.5vh !important;
+        border-right: rgb(166, 170, 197) 1px solid;
+
+        #question {
+            padding: 0px 25px;
+            text-align: justify;
+        }
+
+        .qs-layout {
+            height: 95%;
+            box-sizing: border-box !important;
+            overflow-y: scroll;
+        }
+
+        .nav-btn {
+            background-color: rgb(13, 186, 75) !important;
+            z-index: 0;
+        }
+    }
+
+    .wrapper {
+        position: relative;
+        height: 90vh;
+    }
+
+    .code-editor {
+        position: absolute;
+        right: 0;
+        left: 0;
+        height: 100%;
+        overflow-x: visible;
+        border-left: rgb(166, 170, 197) 1px solid;
+
+        #editor {
+            height: 70vh;
+        }
+
+        #compileMsg {
+            border-bottom: 1px solid rgb(166, 170, 197);
+            margin-bottom: 2px;
+        }
+
+        #editor-nav {
+            background-color: #E0FFE7;
+            align-items: center;
+            font-weight: bold;
+            border-bottom: 1px solid rgb(13, 186, 75);
+        }
+
+        /* #editor-nav .active {
+            align-items: center;
+            font-weight: bold;
+            border-bottom: 1px solid rgb(13, 186, 75);
+        } */
+
+        #nav-tab {
+            width: 100%;
+
+            div {
+                width: 100%;
+            }
+        }
+
+        #nav-tabContent {
+            height: max-content;
+            margin-bottom: 5vh;
+        }
+    }
+
+    .pass {
+        border-color: green !important;
+    }
+
+    .fail {
+        border-color: red !important;
+    }
+
+    #testcases {
+        /* bottom: 0; */
+        padding: 1em 1em 1em 1em;
+        width: 100%;
+        min-height: max-content;
+        max-height: 75vh;
+    }
+
+    .testcase {
+        height: max-content;
+        margin: 1vh;
+        padding: 0px 10px;
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    .editor-config {
+        padding: 1em;
+        min-height: max-content;
+        max-height: 50vh;
+        margin-bottom: 5vh;
+    }
+}
+
+
+/* sidebar {
+    border-right: 1px solid rgb(13, 186, 75);
+    border-bottom: 1px solid rgb(13, 186, 75);
+
+    * {
+        padding: 0 !important;
+    }
+
+    ul {
+        padding: 0px !important;
+    }
+
+    li :active {
+        border-bottom: 1px solid rgb(13, 186, 75);
+    }
+
+    .active {
+        fill: rgb(13, 186, 75);
+    }
+} */
+
+
+
+
+/* template code */
+
+#console-log-div {
+    overflow: auto;
+    width: calc(100%);
+    margin: 10px 0;
+    padding: 5px 0 0 0;
+    display: none;
+    font-family: "Input Mono", monospace;
+    font-weight: 400;
+    font-size: 0.8em;
+    line-height: 1.4em;
+    min-height: max-content;
+    max-height: 75vh;
+    color: rgba(0, 0, 0, .61);
+    border-radius: 2px;
+
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, .1);
+    background-color: #EBEBEB;
+
+    #legend,
+    .log-row,
+    .log-head,
+    td {
+        padding: 10px 0 8px 0;
+        text-indent: 10px;
+    }
+
+    #legend {
+        /* background-color: #E0FFE7; */
+        padding-bottom: 12px;
+        font-size: 1.2em;
+    }
+
+    .log-head {
+        background: rgba(0, 0, 0, .3);
+    }
+
+    .log-row {
+        background: rgba(0, 0, 0, .1);
+    }
+
+    thead {
+        background: rgba(0, 0, 0, .2);
+    }
+}

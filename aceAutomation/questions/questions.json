@@ -1,0 +1,739 @@
+{
+    "warmup": [
+        {
+            "_id": "",
+            "userName": "Pugazharasan C",
+            "questionName": "Add Five",
+            "hardnessScore": 0.2,
+            "tags": [],
+            "executionTime": 0,
+            "timestamp": "",
+            "explanation": "",
+            "userid": "",
+            "sampleOutput": "",
+            "template": "function addFive(num) {\n  ///Your code Starts here \n\n\n\n\n\n///Your code Ends here\n}",
+            "outputDescription": "",
+            "testCases": [
+                {
+                    "input": "addFive(5)",
+                    "output": 10
+                },
+                {
+                    "input": "addFive(0)",
+                    "output": 5
+                },
+                {
+                    "input": "addFive(-5)",
+                    "output": 0
+                }
+            ],
+            "sampleInput": "",
+            "question": "Write a function called \"addFive\".\nGiven a number, \"addFive\" returns 5 added to that number.",
+            "inputDescription": "",
+            "qid": 1
+        },
+        {
+            "_id": "",
+            "userName": "Pugazharasan C",
+            "questionName": "Get Opposite",
+            "hardnessScore": 0.2,
+            "tags": [],
+            "executionTime": 0,
+            "timestamp": "",
+            "explanation": "",
+            "userid": "",
+            "sampleOutput": "",
+            "outputDescription": "",
+            "testCases": [
+                {
+                    "input": "getOpposite(5);",
+                    "output": -5
+                },
+                {
+                    "input": "getOpposite(0);",
+                    "output": 0
+                },
+                {
+                    "input": "getOpposite(-5);",
+                    "output": 5
+                },
+                {
+                    "input": "getOpposite(\"5a\");",
+                    "output": -1
+                },
+                {
+                    "input": "getOpposite(5.5)",
+                    "output": -1
+                }
+            ],
+            "sampleInput": "",
+            "qid": 2,
+            "question": "Write a function called \"getOpposite\".\nIf the given value is an integer, return its opposite value, otherwise return -1",
+            "template": "function getOpposite(num) {\n  ///Your code Starts here \n\n\n\n\n\n///Your code Ends here\n}",
+            "inputDescription": ""
+        },
+        {
+            "_id": "",
+            "userName": "Pugazharasan C",
+            "questionName": "Minutes to Seconds",
+            "hardnessScore": 0.2,
+            "tags": [],
+            "executionTime": 0,
+            "timestamp": "",
+            "explanation": "",
+            "userid": "",
+            "sampleOutput": "",
+            "outputDescription": "",
+            "sampleInput": "",
+            "inputDescription": "",
+            "qid": 3,
+            "question": "Fill in your code that takes an number minutes and converts it to seconds.",
+            "template": "function toSeconds(min) {\n  ///Your code Starts here \n\n\n\n\n\n///Your code Ends here\n}",
+            "testCases": [
+                {
+                    "input": "toSeconds(5);",
+                    "output": 300
+                },
+                {
+                    "input": "toSeconds(3);",
+                    "output": 180
+                },
+                {
+                    "input": "toSeconds(2);",
+                    "output": 120
+                }
+            ]
+        },
+        {
+            "_id": "",
+            "userName": "Pugazharasan C",
+            "questionName": "To Integer",
+            "hardnessScore": 0.2,
+            "tags": [],
+            "executionTime": 0,
+            "timestamp": "",
+            "explanation": "",
+            "userid": "",
+            "sampleOutput": "",
+            "outputDescription": "",
+            "sampleInput": "",
+            "inputDescription": "",
+            "qid": 4,
+            "question": "Create a function that takes a string and returns it as an integer.",
+            "template": "function toInteger(mystr) {\n  ///Your code Starts here \n\n\n\n\n\n///Your code Ends here\n}",
+            "testCases": [
+                {
+                    "input": "toInteger(\"6\");",
+                    "output": 6
+                },
+                {
+                    "input": "toInteger(\"1000\");",
+                    "output": 1000
+                },
+                {
+                    "input": "toInteger(\"12\");",
+                    "output": 12
+                }
+            ]
+        },
+        {
+            "_id": "",
+            "userName": "Pugazharasan C",
+            "questionName": "Next Number",
+            "hardnessScore": 0.2,
+            "tags": [],
+            "executionTime": 0,
+            "timestamp": "",
+            "explanation": "",
+            "userid": "",
+            "sampleOutput": "",
+            "outputDescription": "",
+            "sampleInput": "",
+            "inputDescription": "",
+            "qid": 5,
+            "question": "Create a function that takes a number as an argument, increments the number by +1 and returns the result.",
+            "template": "function nextNumber(myint) {\n  ///Your code Starts here \n\n\n\n\n\n///Your code Ends here\n}",
+            "testCases": [
+                {
+                    "input": "nextNumber(0);",
+                    "output": 1
+                },
+                {
+                    "input": "nextNumber(9);",
+                    "output": 10
+                },
+                {
+                    "input": "nextNumber(-3);",
+                    "output": -2
+                }
+            ]
+        },
+        {
+            "_id": "",
+            "userName": "Pugazharasan C",
+            "questionName": "First Element",
+            "hardnessScore": 0.2,
+            "tags": [],
+            "executionTime": 0,
+            "timestamp": "",
+            "explanation": "",
+            "userid": "",
+            "sampleOutput": "",
+            "outputDescription": "",
+            "sampleInput": "",
+            "inputDescription": "",
+            "qid": 6,
+            "question": "Create a function that takes an array and returns the first element.",
+            "template": "function getFirstElement(arr) {\n  ///Your code Starts here \n\n\n\n\n\n///Your code Ends here\n}",
+            "testCases": [
+                {
+                    "input": "getFirstElement([1, 2, 3]);",
+                    "output": 1
+                },
+                {
+                    "input": "getFirstElement([80, 5, 100]);",
+                    "output": 80
+                },
+                {
+                    "input": "getFirstElement([-500, 0, 50]);",
+                    "output": -500
+                }
+            ]
+        },
+        {
+            "_id": "",
+            "userName": "Pugazharasan C",
+            "questionName": "Hours To Seconds",
+            "hardnessScore": 0.2,
+            "tags": [],
+            "executionTime": 0,
+            "timestamp": "",
+            "explanation": "",
+            "userid": "",
+            "sampleOutput": "",
+            "outputDescription": "",
+            "sampleInput": "",
+            "inputDescription": "",
+            "qid": 7,
+            "question": "Write a function that converts hours into seconds.",
+            "template": "function hourToSeconds(hours) {\n  ///Your code Starts here \n\n\n\n\n\n///Your code Ends here\n}",
+            "testCases": [
+                {
+                    "input": "hourToSeconds(24);",
+                    "output": 86400
+                },
+                {
+                    "input": "hourToSeconds(10);",
+                    "output": 36000
+                },
+                {
+                    "input": "hourToSeconds(2);",
+                    "output": 7200
+                }
+            ]
+        },
+        {
+            "_id": "",
+            "userName": "Pugazharasan C",
+            "questionName": "Find the Perimeter of a Rectangle",
+            "hardnessScore": 0.2,
+            "tags": [],
+            "executionTime": 0,
+            "timestamp": "",
+            "explanation": "",
+            "userid": "",
+            "sampleOutput": "",
+            "outputDescription": "",
+            "sampleInput": "",
+            "inputDescription": "",
+            "qid": 8,
+            "question": "Create a function that takes height and width and finds the perimeter of a rectangle.",
+            "template": "function findPerimeter(num1,num2) {\n  ///Your code Starts here \n\n\n\n\n\n///Your code Ends here\n}",
+            "testCases": [
+                {
+                    "input": "findPerimeter(6, 7); ",
+                    "output": 26
+                },
+                {
+                    "input": "findPerimeter(20, 10);",
+                    "output": 60
+                },
+                {
+                    "input": "findPerimeter(2, 9);",
+                    "output": 22
+                }
+            ]
+        },
+        {
+            "_id": "",
+            "userName": "Pugazharasan C",
+            "questionName": "Less Than 100?",
+            "hardnessScore": 0.2,
+            "tags": [],
+            "executionTime": 0,
+            "timestamp": "",
+            "explanation": "",
+            "userid": "",
+            "sampleOutput": "",
+            "outputDescription": "",
+            "sampleInput": "",
+            "inputDescription": "",
+            "qid": 9,
+            "question": "Given two numbers, return true if the sum of both numbers is less than 100. Otherwise return false.",
+            "template": "function lessThan100(num1,num2) {\n  ///Your code Starts here \n\n\n\n\n\n///Your code Ends here\n}",
+            "testCases": [
+                {
+                    "input": "lessThan100(22, 15);",
+                    "output": true
+                },
+                {
+                    "input": "lessThan100(83, 34);",
+                    "output": false
+                },
+                {
+                    "input": "lessThan100(50, 50);",
+                    "output": false
+                }
+            ]
+        },
+        {
+            "_id": "",
+            "userName": "Pugazharasan C",
+            "questionName": "Reminder",
+            "hardnessScore": 0.2,
+            "tags": [],
+            "executionTime": 0,
+            "timestamp": "",
+            "explanation": "",
+            "userid": "",
+            "sampleOutput": "",
+            "outputDescription": "",
+            "sampleInput": "",
+            "inputDescription": "",
+            "qid": 10,
+            "question": "There is a single operator in JavaScript, capable of providing the remainder of a division operation. Two numbers are passed as parameters. The first parameter divided by the second parameter will have a remainder, possibly zero. Return that value.",
+            "template": "function remainder(num1,num2) {\n  ///Your code Starts here \n\n\n\n\n\n///Your code Ends here\n}",
+            "testCases": [
+                {
+                    "input": "remainder(1, 3);",
+                    "output": 1
+                },
+                {
+                    "input": "remainder(3, 4);",
+                    "output": 3
+                },
+                {
+                    "input": "remainder(-9, 45);",
+                    "output": -9
+                },
+                {
+                    "input": "remainder(5, 5);",
+                    "output": 0
+                }
+            ]
+        },
+        {
+            "_id": "",
+            "userName": "Pugazharasan C",
+            "questionName": "Old macdonald had a farm",
+            "hardnessScore": 0.2,
+            "tags": [],
+            "executionTime": 0,
+            "timestamp": "",
+            "explanation": "",
+            "userid": "",
+            "sampleOutput": "",
+            "outputDescription": "",
+            "sampleInput": "",
+            "inputDescription": "",
+            "qid": 11,
+            "question": "MacDonald is asking you to tell him how many legs can be counted among all his animals. The farmer breeds three species:<br>turkey = 2 legs<br>horse = 4 legs<br>pigs = 4 legs<br>The farmer has counted his animals and he gives you a subtotal for each species. You have to implement a function that returns the total number of legs of all the animals.",
+            "template": "function CountLegs(turkey,horse,pigs) {\n  ///Your code Starts here \n\n\n\n\n\n///Your code Ends here\n}",
+            "testCases": [
+                {
+                    "input": "CountLegs(2, 3, 5);",
+                    "output": 36
+                },
+                {
+                    "input": "CountLegs(1, 2, 3);",
+                    "output": 22
+                },
+                {
+                    "input": "CountLegs(5, 2, 8);",
+                    "output": 50
+                }
+            ]
+        },
+        {
+            "_id": "",
+            "userName": "Pugazharasan C",
+            "questionName": "Frames Per Second",
+            "hardnessScore": 0.2,
+            "tags": [],
+            "executionTime": 0,
+            "timestamp": "",
+            "explanation": "",
+            "userid": "",
+            "sampleOutput": "",
+            "outputDescription": "",
+            "sampleInput": "",
+            "inputDescription": "",
+            "qid": 12,
+            "question": "Create a function that returns the number of frames shown in a given number of minutes for a certain FPS.",
+            "template": "function frames(num1,num2) {\n  ///Your code Starts here \n\n\n\n\n\n///Your code Ends here\n}",
+            "testCases": [
+                {
+                    "input": "frames(1, 1);",
+                    "output": 60
+                },
+                {
+                    "input": "frames(10, 1);",
+                    "output": 600
+                },
+                {
+                    "input": "frames(10, 25); ",
+                    "output": 15000
+                }
+            ]
+        },
+        {
+            "_id": "",
+            "userName": "Pugazharasan C",
+            "questionName": "Check if an Integer is Divisible By Five",
+            "hardnessScore": 0.2,
+            "tags": [],
+            "executionTime": 0,
+            "timestamp": "",
+            "explanation": "",
+            "userid": "",
+            "sampleOutput": "",
+            "outputDescription": "",
+            "sampleInput": "",
+            "inputDescription": "",
+            "qid": 13,
+            "question": "Create a function that returns true if an integer is evenly divisible by 5, and false otherwise.",
+            "template": "function divisibleByFive(num1) {\n  ///Your code Starts here \n\n\n\n\n\n///Your code Ends here\n}",
+            "testCases": [
+                {
+                    "input": "divisibleByFive(5);",
+                    "output": true
+                },
+                {
+                    "input": "divisibleByFive(-55);",
+                    "output": true
+                },
+                {
+                    "input": "divisibleByFive(37);",
+                    "output": false
+                }
+            ]
+        },
+        {
+            "_id": "",
+            "userName": "Pugazharasan C",
+            "questionName": "Write a function called \"isEven\"",
+            "hardnessScore": 0.2,
+            "tags": [],
+            "executionTime": 0,
+            "timestamp": "",
+            "explanation": "",
+            "userid": "",
+            "sampleOutput": "",
+            "outputDescription": "",
+            "sampleInput": "",
+            "inputDescription": "",
+            "qid": 14,
+            "question": "Write a function called \"isEven\". \"isEven\" Should return whether it is even or not. Return -1 for invalid input.",
+            "template": "function isEven(num){\n  ///Your code Starts here \n\n\n\n\n\n///Your code Ends here\n}",
+            "testCases": [
+                {
+                    "input": "isEven(12);",
+                    "output": true
+                },
+                {
+                    "input": "isEven(0);",
+                    "output": true
+                },
+                {
+                    "input": "isEven(11);",
+                    "output": false
+                },
+                {
+                    "input": "isEven(\"11h\");",
+                    "output": -1
+                }
+            ]
+        },
+        {
+            "_id": "",
+            "userName": "Pugazharasan C",
+            "questionName": "Write a function called \"getFullName\".",
+            "hardnessScore": 0.2,
+            "tags": [],
+            "executionTime": 0,
+            "timestamp": "",
+            "explanation": "",
+            "userid": "",
+            "sampleOutput": "",
+            "outputDescription": "",
+            "sampleInput": "",
+            "inputDescription": "",
+            "qid": 15,
+            "question": "Given a first and a last name, \"getFullName\" returns a single string with the given first and last names separated by a single space.",
+            "template": "function getFullName(firstName, lastName){\n  ///Your code Starts here \n\n\n\n\n\n///Your code Ends here\n}",
+            "testCases": [
+                {
+                    "input": "getFullName(\"GUVI\", \"GEEK\");",
+                    "output": "GUVI GEEK"
+                },
+                {
+                    "input": "getFullName(\"GUVI\" );",
+                    "output": "GUVI"
+                },
+                {
+                    "input": "getFullName( \"GEEK\");",
+                    "output": "GEEK"
+                },
+                {
+                    "input": "getFullName(\"\", \"\"); ",
+                    "output": ""
+                }
+            ]
+        },
+        {
+            "_id": "",
+            "userName": "Pugazharasan C",
+            "questionName": "Write a function called \"getLengthOfWord\".",
+            "hardnessScore": 0.2,
+            "tags": [],
+            "executionTime": 0,
+            "timestamp": "",
+            "explanation": "",
+            "userid": "",
+            "sampleOutput": "",
+            "outputDescription": "",
+            "sampleInput": "",
+            "inputDescription": "",
+            "qid": 16,
+            "question": "Given a word, \"getLengthOfWord\" returns the length of the given word.",
+            "template": "function getLengthOfWord(word1){\n  ///Your code Starts here \n\n\n\n\n\n///Your code Ends here\n}",
+            "testCases": [
+                {
+                    "input": "getLengthOfWord(\"GUVI\");",
+                    "output": 4
+                },
+                {
+                    "input": "getLengthOfWord(\"\");",
+                    "output": 0
+                },
+                {
+                    "input": "getLengthOfWord();",
+                    "output": -1
+                },
+                {
+                    "input": "getLengthOfWord(9);",
+                    "output": -1
+                }
+            ]
+        },
+        {
+            "_id": "",
+            "userName": "Pugazharasan C",
+            "questionName": "Write a function called \"isSameLength\".",
+            "hardnessScore": 0.2,
+            "tags": [],
+            "executionTime": 0,
+            "timestamp": "",
+            "explanation": "",
+            "userid": "",
+            "sampleOutput": "",
+            "outputDescription": "",
+            "sampleInput": "",
+            "inputDescription": "",
+            "qid": 17,
+            "question": "Given two words, \"isSameLength\" returns whether the given words have the same length.",
+            "template": "function isSameLength(word1, word2){\n  ///Your code Starts here \n\n\n\n\n\n///Your code Ends here\n}",
+            "testCases": [
+                {
+                    "input": "isSameLength(\"GUVI\", \"GEEK\");",
+                    "output": true
+                },
+                {
+                    "input": "isSameLength(\"GUVI\", \"ZEN\");",
+                    "output": false
+                },
+                {
+                    "input": "isSameLength(\"Hello\", \"GUVI\");",
+                    "output": false
+                }
+            ]
+        },
+        {
+            "_id": "",
+            "userName": "Pugazharasan C",
+            "questionName": "Calculate the distance",
+            "hardnessScore": 0.2,
+            "tags": [],
+            "executionTime": 0,
+            "timestamp": "",
+            "explanation": "",
+            "userid": "",
+            "sampleOutput": "",
+            "outputDescription": "",
+            "sampleInput": "",
+            "inputDescription": "",
+            "qid": 18,
+            "question": "Create a function to calculate the distance between two points defined by their x, y coordinates.",
+            "template": "function getDistance(x1, y1, x2, y2){\n  ///Your code Starts here \n\n\n\n\n\n///Your code Ends here\n}",
+            "testCases": [
+                {
+                    "input": "getDistance(100, 100, 400, 300);",
+                    "output": 360
+                },
+                {
+                    "input": "getDistance(1,2,4,6);",
+                    "output": 5
+                }
+            ]
+        },
+        {
+            "_id": "",
+            "userName": "Pugazharasan C",
+            "questionName": "Write a function called \"getNthElement\".",
+            "hardnessScore": 0.2,
+            "tags": [],
+            "executionTime": 0,
+            "timestamp": "",
+            "explanation": "",
+            "userid": "",
+            "sampleOutput": "",
+            "outputDescription": "",
+            "sampleInput": "",
+            "inputDescription": "",
+            "qid": 19,
+            "question": "Given an array and an integer, \"getNthElement\" returns the element at the given integer, within the given array. If the array has a length of 0, it should return ‘undefined’.",
+            "template": "function getNthElement(array,n){\n  ///Your code Starts here \n\n\n\n\n\n///Your code Ends here\n}",
+            "testCases": [
+                {
+                    "input": "getNthElement([1, 3, 5], 1);",
+                    "output": 3
+                },
+                {
+                    "input": "getNthElement([1, 3, 5], 2);",
+                    "output": 5
+                },
+                {
+                    "input": "getNthElement([], 2);"
+                }
+            ]
+        },
+        {
+            "_id": "",
+            "userName": "Pugazharasan C",
+            "questionName": "Write a function called \"getLastElement\".",
+            "hardnessScore": 0.2,
+            "tags": [],
+            "executionTime": 0,
+            "timestamp": "",
+            "explanation": "",
+            "userid": "",
+            "sampleOutput": "",
+            "outputDescription": "",
+            "sampleInput": "",
+            "inputDescription": "",
+            "qid": 20,
+            "question": "Given an array, \"getLastElement\" returns the last element of the given array. If the given array has a length of 0, it should return '-1'.",
+            "template": "function getLastElement(array){\n  ///Your code Starts here \n\n\n\n\n\n///Your code Ends here\n}",
+            "testCases": [
+                {
+                    "input": "getLastElement([1, 2, 3, 4]);",
+                    "output": 4
+                },
+                {
+                    "input": "getLastElement([1, 2, 3, 4,5,6,7]);",
+                    "output": 7
+                },
+                {
+                    "input": "getLastElement([]);",
+                    "output": -1
+                }
+            ]
+        },
+        {
+            "_id": "",
+            "userName": "Pugazharasan C",
+            "questionName": "Write a function called \"getProperty\".",
+            "hardnessScore": 0.2,
+            "tags": [],
+            "executionTime": 0,
+            "timestamp": "",
+            "explanation": "",
+            "userid": "",
+            "sampleOutput": "",
+            "outputDescription": "",
+            "sampleInput": "",
+            "inputDescription": "",
+            "qid": 21,
+            "question": "Given an object and a key, \"getProperty\" returns the value of the property at the given key. If there is no property at the given key, it should return null.",
+            "template": "var obj = {\n mykey: 'value'\n}\nfunction getProperty(obj, key) {\n  ///Your code Starts here \n\n\n\n\n\n///Your code Ends here\n }",
+            "testCases": [
+                {
+                    "input": "getProperty(obj,'mykey');",
+                    "output": "value"
+                },
+                {
+                    "input": "getProperty(obj,'dummykey');"
+                }
+            ]
+        },
+        {
+            "_id": "",
+            "userName": "Pugazharasan C",
+            "questionName": "Write a function called \"addProperty\".",
+            "hardnessScore": 0.2,
+            "tags": [],
+            "executionTime": 0,
+            "timestamp": "",
+            "explanation": "",
+            "userid": "",
+            "sampleOutput": "",
+            "outputDescription": "",
+            "sampleInput": "",
+            "inputDescription": "",
+            "qid": 22,
+            "question": "Given an object and a key, \"addProperty\" adds a new property on the given object with a value of true.",
+            "template": "var obj = {}\n\nfunction addProperty(obj, key){\n ///Your code Starts here \n\n\n\n\n\n///Your code Ends here\n}\n\n addProperty(obj, \"mykey\");",
+            "testCases": [
+                {
+                    "input": "obj.mykey",
+                    "output": true
+                }
+            ]
+        },
+        {
+            "_id": "",
+            "userName": "Pugazharasan C",
+            "questionName": "Write a function called \"removeProperty\".",
+            "hardnessScore": 0.2,
+            "tags": [],
+            "executionTime": 0,
+            "timestamp": "",
+            "explanation": "",
+            "userid": "",
+            "sampleOutput": "",
+            "outputDescription": "",
+            "sampleInput": "",
+            "inputDescription": "",
+            "qid": 23,
+            "question": "Given an object and a key, \"removeProperty\" removes the given key from the given object.",
+            "template": "var obj = {\"mykey\" : \"value\"}\nfunction removeProperty(obj, key){\n  ///Your code Starts here \n\n\n\n\n\n///Your code Ends here\n}\n\nremoveProperty(obj, \"mykey\");",
+            "testCases": [
+                {
+                    "input": "obj.mykey === undefined;",
+                    "output": true
+                }
+            ]
+        }
+    ],
+    "dummy": []
+}
